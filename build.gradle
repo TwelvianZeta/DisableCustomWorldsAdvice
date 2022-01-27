@@ -56,10 +56,10 @@ publishing {
     repositories {
         maven {
             name = "Repsy"
-            url = uri("https://panel.repsy.io/mvn/zeta/stuff/")
+            url = "https://panel.repsy.io/mvn/zeta/stuff/"
             credentials {
                 username = "zeta"
-                password = project.findProperty("gpr.key") ?: System.getenv("TOKEN")
+                password = System.getenv("TOKEN")
             }
         }
     }
