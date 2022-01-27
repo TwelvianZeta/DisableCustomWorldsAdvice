@@ -77,9 +77,9 @@ publishing {
     repositories {
         maven {
             name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/rdvdev2/DisableCustomWorldsAdvice")
+            url = uri("https://panel.repsy.io/mvn/zeta/stuff/")
             credentials {
-                username = project.findProperty("gpr.user") ?: System.getenv("USERNAME")
+                username = "zeta"
                 password = project.findProperty("gpr.key") ?: System.getenv("TOKEN")
             }
         }
