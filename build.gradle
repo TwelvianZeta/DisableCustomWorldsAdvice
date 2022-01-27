@@ -42,7 +42,7 @@ jar {
 publishing {
 
     publications {
-		mavenJava(MavenPublication) {
+		gpr(MavenPublication) {
 			// add all the jars that should be included when publishing to maven
 			artifact(remapJar) {
 				builtBy remapJar
@@ -56,7 +56,7 @@ publishing {
             url = "https://repsy.io/mvn/zeta/stuff/"
             credentials {
                 username = "zeta"
-                password = System.getenv("TOKEN")
+                password = project.findProperty("gpr.key") ?: System.getenv("TOKEN")
             }
             authentication {
 		// I was missing this authentication section and that's why read timeout
