@@ -64,9 +64,9 @@ publishing {
                     }
                 }
                 scm {
-                    connection = "scm:git:https://github.com/rdvdev2/DisableCustomWorldsAdvice.git"
-                    developerConnection = "scm:git:https://github.com/rdvdev2/DisableCustomWorldsAdvice.git"
-                    url = "https://github.com/rdvdev2/DisableCustomWorldsAdvice"
+                    connection = "scm:git:https://github.com/TwelvianZeta/DisableCustomWorldsAdvice.git"
+                    developerConnection = "scm:git:https://github.com/TwelvianZeta/DisableCustomWorldsAdvice.git"
+                    url = "https://github.com/TwelvianZeta/DisableCustomWorldsAdvice"
                 }
             }
 
@@ -79,7 +79,7 @@ publishing {
     repositories {
         maven {
             name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/rdvdev2/DisableCustomWorldsAdvice")
+            url = uri("https://maven.pkg.github.com/TwelvianZeta/DisableCustomWorldsAdvice")
             credentials {
                 username = project.findProperty("gpr.user") ?: System.getenv("USERNAME")
                 password = project.findProperty("gpr.key") ?: System.getenv("TOKEN")
