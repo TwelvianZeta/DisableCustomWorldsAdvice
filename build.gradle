@@ -58,6 +58,10 @@ publishing {
                 username = "zeta"
                 password = System.getenv("TOKEN")
             }
+            authentication {
+		// I was missing this authentication section and that's why read timeout
+		basic(BasicAuthentication)
+            }
         }
     }
 }
